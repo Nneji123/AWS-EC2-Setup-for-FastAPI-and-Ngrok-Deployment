@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .zip
 ngrok.yml
+.tgz
