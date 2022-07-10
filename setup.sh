@@ -8,5 +8,5 @@ cd ~/AWS-EC2-Setup-for-FastAPI-and-Ngrok-Deployment
 pip3 install -r requirements.txt
 sudo kill -9 $(sudo lsof -t -i:80)
 sudo service nginx restart
-python3 -m uvicorn app:app --reload --host 0.0.0.0
+nohup python3 -m uvicorn app:app --reload --host 0.0.0.0
 
