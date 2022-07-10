@@ -1,14 +1,14 @@
 # USE_NGROK=True uvicorn server:app
 
-import os
-import sys
+# import os
+# import sys
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, PlainTextResponse
-from fastapi.logger import logger
-from pydantic import BaseSettings
+# from fastapi.logger import logger
+# from pydantic import BaseSettings
 from colabcode import ColabCode
-cc = ColabCode(port=12000, code=False)
+cc = ColabCode(port=80, code=False)
 app = FastAPI()
 
 
