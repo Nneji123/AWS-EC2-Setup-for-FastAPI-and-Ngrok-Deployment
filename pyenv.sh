@@ -10,20 +10,18 @@
 #  $ pyenv global 3.7.4
 ################################################################################
 
-if [ ! -r ~/.pyenv/ ]
-then
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-    git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
-    echo '
+sudo git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+sudo git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+echo '
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)" # Enable auto-activation of virtualenvs
+    sudo eval "$(pyenv init -)"
+    sudo eval "$(pyenv virtualenv-init -)" # Enable auto-activation of virtualenvs
 fi' >> ~/.bashrc
     source ~/.bashrc
     exec "$SHELL"
 fi
-pyenv install 3.8.10
-pyenv global 3.8.10
+sudo pyenv install 3.8.10
+sudo pyenv global 3.8.10
