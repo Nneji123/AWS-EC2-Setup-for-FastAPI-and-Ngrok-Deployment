@@ -19,7 +19,7 @@ cd AWS-EC2-Setup-for-FastAPI-and-Ngrok-Deployment
 ```
 ### 6. Then run the setup.sh file to get your application up and running:
 ```bash
-./setup.sh
+./fastapi-setup.sh
 ```
 ### You can then view the application by going to your Public IP's location, an example in my case will be:
 http://3.95.202.74:80/
