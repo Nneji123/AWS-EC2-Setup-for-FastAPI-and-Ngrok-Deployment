@@ -1,4 +1,4 @@
-# AWS EC2 Script to Setup and Deploy FastAPI Application 
+# How to Deploy FastAPI Application with AWS EC2 and Ngrok
 This repository contains a shell script and an example of a FastAPI application. The shell script is used to deploy the application on the AWS EC2 instance and expose the IP address so that the application can be seen on the internet.
 
 ## Steps on how to deploy application using the script
