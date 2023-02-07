@@ -1,4 +1,6 @@
 #!/bin/sh
+sudo apt-get update -y
+sudo apt-get install build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
 curl https://pyenv.run | bash
 export PATH="$HOME/.pyenv/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
